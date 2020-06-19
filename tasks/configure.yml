@@ -1,0 +1,6 @@
+---
+- name: Configure kibana.yml file
+  template:
+    src: kibana.yml.j2
+    dest: "{{ kibana_etc_path }}/kibana.yml"
+  notify: Restart Kibana

@@ -1,2 +1,5 @@
 ---
-# handlers file for mmartinello.kibana
+- name: Restart Kibana
+  service:
+    name: kibana
+    state: restarted

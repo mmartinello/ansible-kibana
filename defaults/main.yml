@@ -1,2 +1,14 @@
 ---
-# defaults file for mmartinello.kibana
+kibana_apt_repository_key_url: https://artifacts.elastic.co/GPG-KEY-elasticsearch
+kibana_apt_repository_url: https://artifacts.elastic.co/packages/7.x/apt
+kibana_etc_path: /etc/kibana
+
+# Server port
+kibana_server_port: 5601
+
+# Server host
+kibana_server_host: 127.0.0.1
+
+# Elasticsearch hosts
+kibana_elasticsearch_hosts:
+  - "http://127.0.0.1:9200"
