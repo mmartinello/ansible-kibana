@@ -1,6 +1,9 @@
 ---
+# Elastic APT repository URL and key
 kibana_apt_repository_key_url: https://artifacts.elastic.co/GPG-KEY-elasticsearch
 kibana_apt_repository_url: https://artifacts.elastic.co/packages/7.x/apt
+
+# Configuration directory path
 kibana_etc_path: /etc/kibana
 
 # Server port
@@ -12,3 +15,6 @@ kibana_server_host: 127.0.0.1
 # Elasticsearch hosts
 kibana_elasticsearch_hosts:
   - "http://127.0.0.1:9200"
+
+# Enable and start Kibana service at startup
+kibana_service_enabled: true
