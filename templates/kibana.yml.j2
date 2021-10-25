@@ -10,3 +10,6 @@ server.host: "{{ kibana_server_host }}"
 
 # The URLs of the Elasticsearch instances to use for all your queries.
 elasticsearch.hosts: [{% for host in kibana_elasticsearch_hosts %}"{{ host }}"{{ ", " if not loop.last else "" }}{% endfor %}]
+
+# The publicly available URL that end-users access Kibana at.
+server.publicBaseUrl: "{{ kibana_server_publicbaseurl }}"
